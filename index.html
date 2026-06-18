@@ -12,6 +12,10 @@ h2{font-size:1.1rem;color:#94a3b8;margin:20px 0 12px;font-weight:600;display:fle
 h2 small{font-size:.75rem;color:#64748b;font-weight:400}
 .header{display:flex;justify-content:space-between;margin-bottom:16px;align-items:center;flex-wrap:wrap;gap:8px}
 .header small{color:#64748b;font-size:.8rem}
+.nav-bar{display:flex;gap:8px;margin-bottom:20px;flex-wrap:wrap}
+.nav-link{background:#1e293b;border:1px solid #334155;border-radius:8px;padding:8px 14px;text-decoration:none;color:#cbd5e1;font-size:12px;font-weight:600;transition:.15s}
+.nav-link:hover{border-color:#a78bfa;background:#2e1065;color:#c4b5fd;transform:translateY(-1px)}
+.nav-link.active{background:#2e1065;border-color:#a78bfa}
 .stats{display:flex;gap:10px;margin-bottom:20px;flex-wrap:wrap}
 .stat{background:#1e293b;padding:10px 16px;border-radius:10px;text-align:center;flex:1;min-width:100px}
 .stat .num{font-size:1.6rem;font-weight:700}
@@ -46,8 +50,16 @@ h2 small{font-size:.75rem;color:#64748b;font-weight:400}
 <div class="header">
     <div>
         <h1>🐙 GitHub LEO</h1>
-        <small>Mise à jour : 18/06/2026 08:25</small>
+        <small>Mise à jour : 18/06/2026 08:44</small>
     </div>
+</div>
+<div class="nav-bar">
+  <a href="https://christophedanhier-hash.github.io/bavi-leo-dashboard/" class="nav-link">🏛️ BAVI LEO</a>
+  <a href="https://christophedanhier-hash.github.io/dashboard-leo/" class="nav-link">📊 Dashboard LEO</a>
+  <a href="https://christophedanhier-hash.github.io/leo-metrics/" class="nav-link">💻 Machines</a>
+  <a href="https://christophedanhier-hash.github.io/crons-dashboard/" class="nav-link">⏱️ Crons</a>
+  <a href="https://christophedanhier-hash.github.io/github-dashboard/" class="nav-link active">🐙 GitHub</a>
+</div>
     <div>
         <span class="badge hermes">🛡️ Hermes 9</span>
         <span class="badge dev">💻 Dev 10</span>
@@ -76,7 +88,30 @@ h2 small{font-size:.75rem;color:#64748b;font-weight:400}
             <div class="info">
                 <span>🔤 Langage</span><span>HTML</span>
                 <span>📅 Créé</span><span>2026-06-14</span>
-                <span>📤 Dernier push</span><span>2026-06-18 08:20</span>
+                <span>📤 Dernier push</span><span>2026-06-18 08:44</span>
+                <span>📝 Commits (7j)</span><span>0</span>
+            </div>
+            <div class="activity">
+                <span>Activité (7j) :</span>
+                <div class="dots"><span class='dot na-dot'></span><span class='dot na-dot'></span><span class='dot na-dot'></span><span class='dot na-dot'></span><span class='dot na-dot'></span><span class='dot na-dot'></span><span class='dot na-dot'></span></div>
+            </div>
+        </div>
+    </div>
+    </a>
+    <a href="https://github.com/christophedanhier-hash/github-dashboard" class="card-link" target="_blank">
+    <div class="card hermes">
+        <div class="card-header">
+            <span class="card-icon">🛡️</span>
+            <div class="card-title">
+                <strong>github-dashboard</strong>
+                <small>Dashboard GitHub LEO — activité repos Hermes vs Développement</small>
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="info">
+                <span>🔤 Langage</span><span>HTML</span>
+                <span>📅 Créé</span><span>2026-06-14</span>
+                <span>📤 Dernier push</span><span>2026-06-18 08:26</span>
                 <span>📝 Commits (7j)</span><span>0</span>
             </div>
             <div class="activity">
@@ -146,29 +181,6 @@ h2 small{font-size:.75rem;color:#64748b;font-weight:400}
                 <span>🔤 Langage</span><span>HTML</span>
                 <span>📅 Créé</span><span>2026-06-13</span>
                 <span>📤 Dernier push</span><span>2026-06-18 07:54</span>
-                <span>📝 Commits (7j)</span><span>0</span>
-            </div>
-            <div class="activity">
-                <span>Activité (7j) :</span>
-                <div class="dots"><span class='dot na-dot'></span><span class='dot na-dot'></span><span class='dot na-dot'></span><span class='dot na-dot'></span><span class='dot na-dot'></span><span class='dot na-dot'></span><span class='dot na-dot'></span></div>
-            </div>
-        </div>
-    </div>
-    </a>
-    <a href="https://github.com/christophedanhier-hash/github-dashboard" class="card-link" target="_blank">
-    <div class="card hermes">
-        <div class="card-header">
-            <span class="card-icon">🛡️</span>
-            <div class="card-title">
-                <strong>github-dashboard</strong>
-                <small>Dashboard GitHub LEO — activité repos Hermes vs Développement</small>
-            </div>
-        </div>
-        <div class="card-body">
-            <div class="info">
-                <span>🔤 Langage</span><span>HTML</span>
-                <span>📅 Créé</span><span>2026-06-14</span>
-                <span>📤 Dernier push</span><span>2026-06-18 07:26</span>
                 <span>📝 Commits (7j)</span><span>0</span>
             </div>
             <div class="activity">
@@ -529,6 +541,6 @@ h2 small{font-size:.75rem;color:#64748b;font-weight:400}
     </div>
     </a></div>
 
-<div class="footer">LEO · 18/06/2026 08:25 · Données GitHub API · Zéro JavaScript</div>
+<div class="footer">LEO · 18/06/2026 08:44 · Données GitHub API · Zéro JavaScript</div>
 </body>
 </html>
